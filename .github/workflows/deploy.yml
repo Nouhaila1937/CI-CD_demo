@@ -25,7 +25,7 @@ jobs:
     # Étape 3 : Construire l'image Docker pour l'application
     - name: Build Docker image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/todo-app .
+        docker build -t todo-app .
 
     # Étape 4 : Se connecter à DockerHub
     - name: Log in to DockerHub
